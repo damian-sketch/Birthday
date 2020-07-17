@@ -1,4 +1,8 @@
 function calculate(){
+  var male= document.getElementById('male').value
+  var female = document.getElementById('female').value 
+
+
   var YOB = document.getElementById('YOB').value;
   var Century = YOB.slice(0,2);
   var CC = parseInt(Century);
@@ -22,26 +26,26 @@ function calculate(){
 
   var birthday = Math.round(result);
 
-  if (birthday == 0){
-    alert('Your birthday is on Sunday');
+  if (birthday == 0 && male == 'male'){
+    alert('Your Akan name is Kwasi');
   }
-  else if(birthday == 1){
-    alert('Your birthday is on Monday');
+  else if(birthday == 1 && male == 'male'){
+    alert('Your Akan name is Kwadwo');
   }
-  else if(birthday == 2){
-    alert('Your birthday is on Tuesday');
+  else if(birthday == 2 && male == 'male'){
+    alert('Your Akan name is Kwabena');
   }
-  else if(birthday == 3){
-    alert('Your birthday is on Wednesday');
+  else if(birthday == 3 && male == 'male'){
+    alert('Your Akan name is Kwaku');
   }
-  else if(birthday == 4){
-    alert('Your birthday is on Thursday');
+  else if(birthday == 4 && male == 'male'){
+    alert('Your Akan name is Yaw');
   }
-  else if(birthday == 5){
-    alert('Your birthday is on Friday');
+  else if(birthday == 5 && male == 'male'){
+    alert('Your Akan name is Kofi');
   }
-  else if(birthday == 5){
-    alert('Your birthday is on Saturday');
+  else if(birthday == 6 && male == 'male'){
+    alert('Your Akan name is Kwame');
   }
 
   
