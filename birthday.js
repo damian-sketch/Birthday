@@ -26,6 +26,7 @@ function calculate(){
 
   var birthday = Math.round(result);
 
+  //Akan Names for Males//
   if (birthday == 0 && male == 'male'){
     alert('Your Akan name is Kwasi');
   }
