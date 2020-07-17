@@ -18,7 +18,32 @@ function calculate(){
     alert('Enter a valid Date');
   }
 
-  var result = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7
+  var result = (((CC/4)-2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
 
-  alert(result);
+  var birthday = Math.round(result);
+
+  if (birthday == 0){
+    alert('Your birthday is on Sunday');
+  }
+  else if(birthday == 1){
+    alert('Your birthday is on Monday');
+  }
+  else if(birthday == 2){
+    alert('Your birthday is on Tuesday');
+  }
+  else if(birthday == 3){
+    alert('Your birthday is on Wednesday');
+  }
+  else if(birthday == 4){
+    alert('Your birthday is on Thursday');
+  }
+  else if(birthday == 5){
+    alert('Your birthday is on Friday');
+  }
+  else if(birthday == 5){
+    alert('Your birthday is on Saturday');
+  }
+
+  
+  
 }
