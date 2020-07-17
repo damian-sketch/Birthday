@@ -2,31 +2,35 @@
 
   <head>
     <title>AKAN NAMES</title>
+    <script src="birthday.js"></script>
   </head>
 
   <body>
+
+    <div id="error"></div>  
+
     <form>
       <!--Radio button for male-->
-      <input type="radio" id="male" name="gender" value="male">
+      <input type="radio" id="male" name="gender" value="male" required>
       <label for="male">Male</label>
 
       <!--Radio button for female-->
-      <input type="radio" id="female" name="gender" value="female">
+      <input type="radio" id="female" name="gender" value="female" required>
       <label for="male">Female</label>
       <br>
 
       <!--Input for birthday details-->
       <label for="YOB">Year Of Birth</label>
-      <input type="text" id="YOB" name="YOB"><br> 
+      <input type="text" id="YOB" name="YOB" required><br> 
 
       <label for="MOB">Month Of Birth</label>
-      <input type="text" id="MOB" name="MOB"><br> 
+      <input type="text" id="MOB" name="MOB" required><br> 
 
       <label for="DOB">Date Of Birth</label>
-      <input type="text" id="DOB" name="DOB"><br> 
+      <input type="text" id="DOB" name="DOB" required><br> 
 
       <br>
-      <input type="submit" value="Submit">
+      <button type="button" onclick="calculate()">Submit</button>
     </form> 
   </body>
 
