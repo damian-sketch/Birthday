@@ -49,6 +49,28 @@ function calculate(){
     alert('Your Akan name is Kwame');
   }
 
-  
+//Akan names for Females//
+
+if (birthday == 0 && female== 'female'){
+  alert('Your Akan name is Akosua');
+}
+else if(birthday == 1 && female == 'female'){
+  alert('Your Akan name is Adwoa');
+}
+else if(birthday == 2 && female == 'female'){
+  alert('Your Akan name is Abenaa');
+}
+else if(birthday == 3 && female == 'female'){
+  alert('Your Akan name is Akua');
+}
+else if(birthday == 4 && female == 'female'){
+  alert('Your Akan name is Yaa');
+}
+else if(birthday == 5 && female == 'female'){
+  alert('Your Akan name is Afua');
+}
+else if(birthday == 6 && female == 'female'){
+  alert('Your Akan name is Ama');
+}
   
 }
