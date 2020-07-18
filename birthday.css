@@ -28,6 +28,7 @@ h1, h2{
   
 }
 
+
 h1{
   text-align: center;
 }
@@ -67,7 +68,9 @@ ul{
 }
 
 .about{
-  background-image: linear-gradient(rgba(5, 30, 97, 0.568), rgb(2, 13, 37));
+  background-image: url('dark.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
   margin-left: 20px;
   margin-top: 20px;
