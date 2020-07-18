@@ -70,25 +70,25 @@ function calculate(){
           alert('Your Akan Name is Akosua');
           break;
         case 1:
-          alert('Your Akan Name is Adwoa');
+          alert( 'Your Akan Name is Adwoa');
           break;
         case 2:
-          alert('Your Akan Name is Abenaa');
+          alert( 'Your Akan Name is Abenaa');
           break;
         case 3:
-          alert('Your Akan Name is Akua');
+          alert( 'Your Akan Name is Akua');
           break;
         case 4:
-          alert('Your Akan Name is Yaa');
+          alert( 'Your Akan Name is Yaa');
           break;
         case 5:
-          alert('Your Akan Name is Afua');
+          alert( 'Your Akan Name is Afua');
           break;
         case 6:
-          alert('Your Akan Name is Ama');
+          alert( 'Your Akan Name is Ama');
           break;  
         default:
-          alert('Could not find an Akan name for you, Please check your Input!'); 
+          alert( 'Could not find an Akan name for you, Please check your Input!'); 
       }
   }
 
