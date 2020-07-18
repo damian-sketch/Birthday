@@ -92,5 +92,5 @@ function calculate(){
       }
   }
 
-
+  document.getElementById('my-form').reset(); 
 }
