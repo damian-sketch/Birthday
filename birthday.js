@@ -32,6 +32,7 @@ function calculate(){
 
   var birthday = Math.round(result);
   
+//Assigns Male names  
   switch(gender){
     case 'male':
       switch(birthday){
@@ -61,7 +62,7 @@ function calculate(){
       }
   }
 
-
+//Assigns female names
   switch(gender){
     case 'female':
       switch(birthday){
