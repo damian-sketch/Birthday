@@ -1,7 +1,13 @@
-function calculate(){
-  var male= document.getElementById('male').value
-  var female = document.getElementById('female').value 
+// Retrieving the selected radio button
 
+function checkGender(){
+  var sex = document.getElementsByName("gender");
+  if(sex[0].checked == true){
+    var gender = 'male';
+
+  }else if(sex[1].checked == 'true'){
+    var gender = 'female';
+  }
 
   var YOB = document.getElementById('YOB').value;
   var Century = YOB.slice(0,2);
@@ -27,53 +33,5 @@ function calculate(){
   var birthday = Math.round(result);
   
 
-  //Akan Names for Males
   
-  if(male.value == "male"){  
-    if (birthday == 0   ){
-      alert('Your Akan name is Kwasi');
-    }
-    else if(birthday == 1   ){
-      alert('Your Akan name is Kwadwo');
-    }
-    else if(birthday == 2   ){
-      alert('Your Akan name is Kwabena');
-    }
-    else if(birthday == 3   ){
-      alert('Your Akan name is Kwaku');
-    }
-    else if(birthday == 4   ){
-      alert('Your Akan name is Yaw');
-    }
-    else if(birthday == 5   ){
-      alert('Your Akan name is Kofi');
-    }
-    else if(birthday == 6   ){
-      alert('Your Akan name is Kwame');
-    }
-  }
-  
-  else if(female.value == 'female'){
-    if (birthday == 0  ){
-      alert('Your Akan name is Akosua');
-    }
-    else if(birthday == 1  ){
-      alert('Your Akan name is Adwoa');
-    }
-    else if(birthday == 2  ){
-      alert('Your Akan name is Abenaa');
-    }
-    else if(birthday == 3  ){
-      alert('Your Akan name is Akua');
-    }
-    else if(birthday == 4  ){
-      alert('Your Akan name is Yaa');
-    }
-    else if(birthday == 5  ){
-      alert('Your Akan name is Afua');
-    }
-    else if(birthday == 6  ){
-      alert('Your Akan name is Ama');
-    }
-  }     
 }
