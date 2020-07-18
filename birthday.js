@@ -8,7 +8,11 @@ function checkGender(){
   }else if(sex[1].checked == 'true'){
     var gender = 'female';
   }
+}
 
+// Calculate the day of the week
+function calculate(){
+  
   var YOB = document.getElementById('YOB').value;
   var Century = YOB.slice(0,2);
   var CC = parseInt(Century);
@@ -33,5 +37,4 @@ function checkGender(){
   var birthday = Math.round(result);
   
 
-  
-}
+}  
