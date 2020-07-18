@@ -1,11 +1,16 @@
 function calculate(){
-  //Collecting User's data and calculating the day of the week
+  //Collecting User's data 
   var YOB = document.getElementById('YOB').value;
   var Century = YOB.slice(0,2);
   var CC = parseInt(Century);
   var Year = YOB.slice(2,4);
   var YY = parseInt(Year);
+  var MOB = document.getElementById('MOB').value;
+  var MM = parseInt(MOB);
+  var DOB = document.getElementById('DOB').value;
+  var DD = parseInt(DOB);
 
+//Checks what gender the user picks
   var radio = document.getElementsByName('gender');
     if (radio[0].checked){
       var gender = 'male'
@@ -15,22 +20,17 @@ function calculate(){
 
 
 // Checking for validity of dates
-  var MOB = document.getElementById('MOB').value;
-  var MM = parseInt(MOB);
+ 
   if (MM<=0 || MM>12){
     alert('Enter a valid month');
-  }
-
-  var DOB = document.getElementById('DOB').value;
-  var DD = parseInt(DOB);
-  if (DD<=0 || DD>31){
+  }else if (DD<=0 || DD>31){
     alert('Enter a valid Date');
-  }
-
+  }else{
 // Calculating the result
   var result = (((CC/4)-2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
 
   var birthday = Math.round(result);
+  }
   
 //Assigns Male names  
   switch(gender){
@@ -58,7 +58,7 @@ function calculate(){
           alert('Your Akan Name is Kwame');
           break;  
         default:
-          alert('You do not have an Akan name')  
+          alert('Could not find an Akan name for you, Please check your Input!');  
       }
   }
 
@@ -88,7 +88,7 @@ function calculate(){
           alert('Your Akan Name is Ama');
           break;  
         default:
-          alert('You do not have an Akan name')  
+          alert('Could not find an Akan name for you, Please check your Input!'); 
       }
   }
 
