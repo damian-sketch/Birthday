@@ -6,32 +6,70 @@
   </head>
 
   <body>
+    <div class="about">
+      <h1>AKAN NAME GENERATOR</h1>
+      <p>
+        Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 
+        'day name' which corresponds to the day in the week they were born. This application will help you identify an akan name 
+        based on the time you were born. Simply fill out the form on this page then compare your Akan name to the list below to find 
+        out what day of the week you were born.
 
-    <div id="error"></div>  
+        <h2>For Males;</h2>
+        <ul>Sunday: Kwasi</ul>
 
-    <form>
-        <!--Radio button for male-->
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label>
+        <ul>Monday: Kwadwo</ul>
 
-        <!--Radio button for female-->
-        <input type="radio" id="female"  name="gender" value="female" required>
-        <label for="female">Female</label>
+        <ul>Tuesday: Kwabena</ul>
+
+        <ul>Wednesday: Kwaku</ul>
+
+        <ul>Thursday:  Yaw</ul>
+
+        <ul>Friday: Kofi</ul>
+
+        <ul>Saturday: Kwame</ul>
+
+        <h2>For Females;</h2>
+        <ul>Sunday: Akosua</ul>
+
+        <ul>Monday: Adwoa</ul>
+
+        <ul>Tuesday: Abenaa</ul>
+
+        <ul>Wednesday: Akua</ul>
+
+        <ul>Thursday:  Yaa</ul>
+
+        <ul>Friday: Afua</ul>
+
+        <ul>Saturday: Ama</ul>
+      </p>
+    </div>
+
+      
+      <form>
+          <!--Radio button for male-->
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+
+          <!--Radio button for female-->
+          <input type="radio" id="female"  name="gender" value="female" required>
+          <label for="female">Female</label>
+          <br>
+      
+        <!--Input for birthday details-->
+        <label for="YOB">Year Of Birth</label>
+        <input type="text" id="YOB" name="YOB" required><br> 
+
+        <label for="MOB">Month Of Birth</label>
+        <input type="text" id="MOB" name="MOB" required><br> 
+
+        <label for="DOB">Date Of Birth</label>
+        <input type="text" id="DOB" name="DOB" required><br> 
+
         <br>
-     
-      <!--Input for birthday details-->
-      <label for="YOB">Year Of Birth</label>
-      <input type="text" id="YOB" name="YOB" required><br> 
-
-      <label for="MOB">Month Of Birth</label>
-      <input type="text" id="MOB" name="MOB" required><br> 
-
-      <label for="DOB">Date Of Birth</label>
-      <input type="text" id="DOB" name="DOB" required><br> 
-
-      <br>
-      <button type="button" onclick="calculate()">Submit</button>
-    </form> 
+        <button type="button" onclick="calculate()">Submit</button>
+      </form> 
   </body>
 
 
