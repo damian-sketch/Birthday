@@ -25,52 +25,55 @@ function calculate(){
   var result = (((CC/4)-2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7
 
   var birthday = Math.round(result);
-
-  //Akan Names for Males//
-  if (birthday == 0 && male == 'male'){
-    alert('Your Akan name is Kwasi');
-  }
-  else if(birthday == 1 && male == 'male'){
-    alert('Your Akan name is Kwadwo');
-  }
-  else if(birthday == 2 && male == 'male'){
-    alert('Your Akan name is Kwabena');
-  }
-  else if(birthday == 3 && male == 'male'){
-    alert('Your Akan name is Kwaku');
-  }
-  else if(birthday == 4 && male == 'male'){
-    alert('Your Akan name is Yaw');
-  }
-  else if(birthday == 5 && male == 'male'){
-    alert('Your Akan name is Kofi');
-  }
-  else if(birthday == 6 && male == 'male'){
-    alert('Your Akan name is Kwame');
-  }
-
-//Akan names for Females//
-
-if (birthday == 0 && female== 'female'){
-  alert('Your Akan name is Akosua');
-}
-else if(birthday == 1 && female == 'female'){
-  alert('Your Akan name is Adwoa');
-}
-else if(birthday == 2 && female == 'female'){
-  alert('Your Akan name is Abenaa');
-}
-else if(birthday == 3 && female == 'female'){
-  alert('Your Akan name is Akua');
-}
-else if(birthday == 4 && female == 'female'){
-  alert('Your Akan name is Yaa');
-}
-else if(birthday == 5 && female == 'female'){
-  alert('Your Akan name is Afua');
-}
-else if(birthday == 6 && female == 'female'){
-  alert('Your Akan name is Ama');
-}
   
+
+  //Akan Names for Males
+  
+  if(male.value == "male"){  
+    if (birthday == 0   ){
+      alert('Your Akan name is Kwasi');
+    }
+    else if(birthday == 1   ){
+      alert('Your Akan name is Kwadwo');
+    }
+    else if(birthday == 2   ){
+      alert('Your Akan name is Kwabena');
+    }
+    else if(birthday == 3   ){
+      alert('Your Akan name is Kwaku');
+    }
+    else if(birthday == 4   ){
+      alert('Your Akan name is Yaw');
+    }
+    else if(birthday == 5   ){
+      alert('Your Akan name is Kofi');
+    }
+    else if(birthday == 6   ){
+      alert('Your Akan name is Kwame');
+    }
+  }
+  
+  else if(female.value == 'female'){
+    if (birthday == 0  ){
+      alert('Your Akan name is Akosua');
+    }
+    else if(birthday == 1  ){
+      alert('Your Akan name is Adwoa');
+    }
+    else if(birthday == 2  ){
+      alert('Your Akan name is Abenaa');
+    }
+    else if(birthday == 3  ){
+      alert('Your Akan name is Akua');
+    }
+    else if(birthday == 4  ){
+      alert('Your Akan name is Yaa');
+    }
+    else if(birthday == 5  ){
+      alert('Your Akan name is Afua');
+    }
+    else if(birthday == 6  ){
+      alert('Your Akan name is Ama');
+    }
+  }     
 }
