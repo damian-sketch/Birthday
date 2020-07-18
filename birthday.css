@@ -22,7 +22,8 @@ p{
 }
 
 h1, h2{
-  color: rgb(250, 207, 15);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
   font-family: " Raleway";
 }
 
@@ -33,7 +34,7 @@ h1, h2{
   animation: blink 1s infinite;
 }
 
-
+/*Activating the blink animation*/
 @keyframes blink {
   20%,
   24%,
@@ -58,9 +59,10 @@ ul{
 }
 
 .about{
-  background-image: linear-gradient(rgb(50, 119, 48), rgb(5, 36, 5));
+  background-image: linear-gradient(rgba(5, 30, 97, 0.568), rgb(2, 13, 37));
   padding: 5px;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
   border-radius: 5px;
   
 }
